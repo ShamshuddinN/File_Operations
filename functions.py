@@ -4,7 +4,7 @@ import shutil
 def choose_folder(num: int, folders: list):
     assert isinstance(num, int) and isinstance(folders, list), "Given arguments are Incorrect"
 
-    if num > len(folders) or num == 0:
+    if num > len(folders) or num <= 0:
         return "That Folder Dosen't Exist"
     
     return folders[num - 1]

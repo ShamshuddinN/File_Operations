@@ -2,7 +2,7 @@
 import os
 from functions import move_or_copy
 
-# Cpoy or move specific files filtered with type using extension
+# Copy or move files between folders based on their file type
 
 files = os.listdir()
 

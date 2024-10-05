@@ -64,36 +64,22 @@ else:
 
 
 if go_ahead:
-    print('Everything Okay')
+    print('Everything is okay')
     files_got = os.listdir(folder_got)
 
     if int(rename_option) == 1:
-        print('Renaming files option 1')
+        print('Renaming files with option 1..')
         op1(files= files_got, folder_name = folder_got, sep = seperator_choice)
     elif int(rename_option) == 2:
         common_f_name = input('Enter a common file name: ')
-        print('Renaming files option 2')
+        print('Renaming files with option 2..')
         op2n3(files= files_got, folder_name = folder_got, sep = seperator_choice, cmn = common_f_name, nature='t+s')
         print('Done')
     elif int(rename_option) == 3:
         common_f_name = input('Enter a common file name: ')
-        print('Renaming files option 3')
+        print('Renaming files with option 3..')
         op2n3(files= files_got, folder_name = folder_got, sep = seperator_choice, cmn = common_f_name, nature='s+t')
         print('Done')
-    
-
-
-        
-# for i, file in enumerate(files_got):
-#     ext_indx = file[-10:][::-1].index('.') + 1
-#     # taking Extension of file seperately
-#     ext = file[-ext_indx:]
-#     fnm = file.replace(ext, '')
-#     old_file = os.path.join(folder_got, file)
-#     new_file = os.path.join(folder_got, f'{init_num}{seperator_choice}{fnm}{ext}')
-#     os.rename(old_file, new_file)
-#     init_num += 1
-            # 1 st feature Done.
 
 
 # Options:
@@ -105,10 +91,3 @@ if go_ahead:
 
 
 # python3 rename.py
-
-# if os.path.isdir('/' + files[1]):
-#     print(f"{files[1]} is a directory.")
-# else:
-#     print(f"{files[1]} is not a directory")
-
-# print(os.path.isdir('Files_to_Rename'))
